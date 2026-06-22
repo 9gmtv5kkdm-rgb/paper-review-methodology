@@ -1,4 +1,4 @@
-# Paper Review Methodology / 学术论文全面审查方法论
+﻿# Paper Review Methodology / 学术论文全面审查方法论
 
 > From 15+ real-world review iterations and 4 major versions — now packaged as a reusable OpenClaw skill, with 29 methods across 7 systems including desensitization review.
 
@@ -106,6 +106,10 @@ clawhub install paper-review-methodology
 skillhub install paper-review-methodology
 ```
 
-## License
+## 作者
+
+刘楠
+
+## 许可
 
 Open for academic use. Attribution appreciated.
