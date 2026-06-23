@@ -1,23 +1,24 @@
-﻿---
+---
 name: paper-review-methodology
 slug: paper-review-methodology
-version: 2.0.0
-allowed-tools: [read, write]
-displayName: 学术论文全面审查方法论
+displayName: 论文审校
+version: 2.0.2
 summary: 29类审查方法按7大体系组织，含脱敏筛查，覆盖论文全生命周期从宏观评估到逐段执行
-description: |
-  Comprehensive academic paper review methodology with 29 review categories across 7 systems.
-  Covers: full-paper review, version comparison, figure/table citation audit, AI-language purification,
-  data authenticity verification, reference cross-checking, illustration feasibility analysis,
-  abstract symmetry check, module consistency audit, architecture conflict analysis,
-  requirement fulfillment audit, P0-P3 severity grading, desensitization review, and scoring.
-  
-  学术论文全面审查方法论，29类审查方法按7大体系组织（含脱敏筛查）。
-  触发词：审查论文、论文评审、方法论审查、版本对比、图文检查、AI检测、数据验证、P0/P1/P2/P3分级、论文评分、脱敏筛查。
-  English triggers: paper review, thesis review, methodology review, version comparison, figure audit,
-  AI detection, data verification, P0-P3 grading, paper scoring, desensitization review.
+description: 29类审查方法按7大体系组织，含脱敏筛查，覆盖论文全生命周期从宏观评估到逐段执行 适用于 论文审查、审稿、同行评议、论文质量、审稿意见 等场景。
+allowed-tools:
+- read
+- write
 triggers:
-  - "paper-review-methodology: 审查论文, 论文评审, 方法论审查, AI检测, 数据验证, P0分级, 论文评分"
+- 论文审查
+- 审稿
+- 同行评议
+- 论文质量
+- 审稿意见
+- 评审框架
+- 论文评估
+- 论文诊断
+- 论文检查
+- 审稿报告
 ---
 
 # 学术论文全面审查方法论（Paper Review Methodology）
@@ -225,6 +226,57 @@ triggers:
 3. 如果你需要处理超出本技能范围的任务，请说明具体需求，我会推荐套件内其他子技能或外部技能。
 4. 版本1.1.0升级至2.0.0：新增完整技能架构（场景路由/互斥声明/质量标准/诊断系统/自进化体系），原有功能不变。
 
+---
+
+## 🔗 学术技能网 · 自动补全
+
+> 你安装了论文审校。学术全能包旗下共 12 个工具，本机缺了 10 个。
+
+### 缺失的技能
+
+| 技能名 | 中文名 | SkillHub ID |
+|--------|--------|:------:|
+| literature-mining | 文献研究 | 90310 |
+| plagiarism-precheck | 查重卫士 | 90335 |
+| abstract-optimizer | 摘要精修 | 90334 |
+| academic-writing-bank | 写作词库 | 90298 |
+| academic-chart-gen | 学术制图 | 90299 |
+| academic-figure-gen | 架构绘图 | 90287 |
+| academic-docx-toolkit | 论文排版 | 90289 |
+| paper-version-manager | 版本管家 | 90288 |
+| reference-formatter | 引文规范 | 90580 |
+| submission-helper | 投稿指南 | 90309 |
+
+### 一键补全
+
+对 QClaw 说：**「帮我安装以下技能」**
+
+```
+skillhub install literature-mining
+skillhub install plagiarism-precheck
+skillhub install abstract-optimizer
+skillhub install academic-writing-bank
+skillhub install academic-chart-gen
+skillhub install academic-figure-gen
+skillhub install academic-docx-toolkit
+skillhub install paper-version-manager
+skillhub install reference-formatter
+skillhub install submission-helper
+```
+
+> 💡 也可以直接装「学术全能包」（academic-paper-workshop），一个安装自动拉取全部。
+
+## 示例
+
+请按审稿人视角审查我论文的创新点部分。→ 应输出：分数 + 问题 + 修改建议。
 
 
+## 画像与风格定位
+
+独立审稿人，用标准框架打分、指出根因、给出可操作建议。
+
+
+## 变更记录（ADR）
+
+- 2026-06-23: v2.0.0 初始发布；v2.0.1 补充示例、画像、ADR与触发词。
 
