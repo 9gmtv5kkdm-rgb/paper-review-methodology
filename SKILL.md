@@ -2,10 +2,10 @@
 name: paper-review-methodology
 slug: paper-review-methodology
 displayName: 论文审校
-version: 2.0.3
+version: 2.0.5
 summary: 29类审查方法按7大体系组织，含脱敏筛查，覆盖论文全生命周期从宏观评估到逐段执行
 description: 29类审查方法按7大体系组织，含脱敏筛查，覆盖论文全生命周期从宏观评估到逐段执行 适用于 论文审查、审稿、同行评议、论文质量、审稿意见、评审框架、论文评估、论文诊断、论文检查、审稿报告 等场景。
-allowed-tools:
+allowedTools:
 - read
 - write
 triggers:
@@ -213,7 +213,7 @@ triggers:
 ├── 诊断系统: 3条案例+2把诊断刀
 ├── 联网规则: 2条
 ├── 自进化体系: 五层完整
-└── YAML配置: 完整带allowed-tools
+└── YAML配置: 完整带allowedTools
 ```
 
 **核心配置**：
