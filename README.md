@@ -1,8 +1,8 @@
 ﻿# Paper Review Methodology / 学术论文全面审查方法论
 
-> From 15+ real-world review iterations and 4 major versions — now packaged as a reusable OpenClaw skill, with 29 methods across 7 systems including desensitization review.
+> From 15+ real-world review iterations and 4 major versions — now packaged as a reusable OpenClaw skill, with 30 methods across 7 systems including desensitization review and cross-paragraph semantic consistency audit.
 
-> 从15+次真实论文审查迭代和4个大版本中提炼出的29类全面审查方法论（含脱敏筛查），封装为可复用的 OpenClaw 技能。
+> 从15+次真实论文审查迭代和4个大版本中提炼出的30类全面审查方法论（含脱敏筛查+跨段语义一致性审查），封装为可复用的 OpenClaw 技能。
 
 ---
 
@@ -10,7 +10,7 @@
 
 This skill provides a systematic framework for reviewing academic papers, covering every aspect from macro-level assessment to sentence-level execution. It was developed through extensive practice reviewing a Chinese engineering master's thesis across 15+ iterations from v11 to V3.0.10 (scores evolving from 71 to 91.5).
 
-29 review methods are organized into **7 major systems**, enabling structured, repeatable, and auditable paper reviews.
+30 review methods are organized into **7 major systems**, enabling structured, repeatable, and auditable paper reviews.
 
 ## What's Inside
 
@@ -24,7 +24,7 @@ This skill provides a systematic framework for reviewing academic papers, coveri
 | IV | **Structural Comparison** | 3 | Architecture conflict analysis, cross-version reference audit, dual-version scoring |
 | V | **Data Compliance** | 5 | Data authenticity, dual-attribution, abstract symmetry, reference check, desensitization review |
 | VI | **Requirement Audit** | 3 | 14-decision audit, 7-expert-requirement audit, safe baseline strategy |
-| VII | **Execution Methods** | 3 | Modification checklist, paragraph-by-paragraph comparison, P0 fix audit |
+| VII | **Execution Methods** | 4 | Modification checklist, paragraph-by-paragraph comparison, P0 fix audit, cross-paragraph semantic consistency |
 
 ### Highlight Features
 
@@ -35,13 +35,14 @@ This skill provides a systematic framework for reviewing academic papers, coveri
 - **Dual-Attribution Detection** — identify when the same metric is attributed to two different causes
 - **Safe Baseline Strategy** — merge multiple versions while preserving data integrity
 - **Score Evolution Tracking** — quantify paper quality improvements across revisions
+- **Cross-Paragraph Semantic Consistency (#30)** — detect definition-reference quantity contradictions (e.g. "etc." vs "five items"), Chinese numeral word audit, claimed-vs-actual count mismatch
 
 ## Usage Examples
 
 ### Quick Review
 > "审查这篇论文" / "Review this paper"
 
-The skill triggers automatically and applies the full 29-method framework.
+The skill triggers automatically and applies the full 30-method framework.
 
 ### Figure Audit
 > "检查论文的插图引用是否规范" / "Check if all figures are properly cited"
@@ -81,7 +82,7 @@ paper-review-methodology/
     ├── structural-comparison.md          # Methods #16-18: Structural comparison
     ├── data-compliance.md                # Methods #19-23: Data & compliance
     ├── requirement-audit.md              # Methods #24-26: Requirement audit
-    └── execution-methods.md              # Methods #27-29: Execution methods
+    └── execution-methods.md              # Methods #27-30: Execution methods
 ```
 
 ## Language Support
@@ -94,7 +95,7 @@ paper-review-methodology/
 
 This methodology was developed and battle-tested during the review of an engineering master's thesis on industrial digitalization and traceability systems. Over 15 review iterations across 4 major version lineages, it evolved from ad-hoc feedback into a structured, comprehensive framework.
 
-The real-world results: the thesis improved from an initial score of 71 to a final score of 91.5, with all P0 critical defects resolved and zero fabricated data points.
+The real-world results: the thesis improved from an initial score of 71 to a final score of 91.5, with all P0 critical defects resolved and zero fabricated data points. A cross-paragraph semantic contradiction (definition using "etc." vs. reference using "five items") that survived multiple rounds of automated review was discovered through user inspection, leading to the addition of Method #30.
 
 ## Installation
 
